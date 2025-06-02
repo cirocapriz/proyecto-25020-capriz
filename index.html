@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Librería Minimal</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="hero.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+<body>
+ 
+
+  <header class="header">
+  <div class="logo-container">
+    <img src="img/logo1.png" class="logo" alt="Logo">
+  </div>
+  <ul class="navbar">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li><a href="carrito.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
+  </ul>
+</header>
+
+
+  <main>
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h4>¡Bienvenido a la librería!</h4>
+            <h2>Libros clásicos y modernos</h2>
+            <h1>Con grandes descuentos</h1>
+            <p>¡Comprá online desde cualquier lugar!</p>
+            <button onclick="location.href='#catalogo'">Explorar</button>
+        </div>
+    </section>
+
+    <section id="catalogo" class="catalogo">
+      <h1>"La única cosa que tiene que saber, es la dirección de la biblioteca." Albert E.</h1>
+      <div class="productos-container">
+        <div class="producto">
+            <img src="img/martin-fierro.jpg" alt="Martín Fierro">
+            <div class="producto-descripcion">
+                <span>José Hernández</span>
+                    <h5>Martín Fierro</h5>
+                    <h4>$2500</h4>
+            </div>
+            <a href="libros/martin-fierro.html" class="carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+        <div class="producto">
+            <img src="img/sin-querer-queriendo.jpg" alt="Sin querer queriendo">
+            <div class="producto-descripcion">
+                <span>Roberto G. Bolaños</span>
+                <h5>Sin querer queriendo</h5>
+                <h4>$3100</h4>
+            </div>
+            <a href="libros/sin-querer-queriendo.html" class="carrito">
+                <i class="fas fa-shopping-cart"></i>
+            </a>
+        </div>
+
+        <div class="producto">
+  <img src="img/cien-anos-de-soledad.jpg" alt="Cien años de soledad">
+  <div class="producto-descripcion">
+    <span>Gabriel García Márquez</span>
+    <h5>Cien años de soledad</h5>
+    <h4>$3900</h4>
+  </div>
+  <a href="libros/cien-anos-de-soledad.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+<div class="producto">
+  <img src="img/1984.jpg" alt="1984">
+  <div class="producto-descripcion">
+    <span>George Orwell</span>
+    <h5>1984</h5>
+    <h4>$3100</h4>
+  </div>
+  <a href="libros/1984.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+<div class="producto">
+  <img src="img/el-principito.jpg" alt="El Principito">
+  <div class="producto-descripcion">
+    <span>Antoine de Saint-Exupéry</span>
+    <h5>El Principito</h5>
+    <h4>$2200</h4>
+  </div>
+  <a href="libros/el-principito.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+<div class="producto">
+  <img src="img/la-sombra-del-viento.jpg" alt="La Sombra del Viento">
+  <div class="producto-descripcion">
+    <span>Carlos Ruiz Zafón</span>
+    <h5>La Sombra del Viento</h5>
+    <h4>$3600</h4>
+  </div>
+  <a href="libros/la-sombra-del-viento.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+<div class="producto">
+  <img src="img/don-quijote.jpg" alt="Don Quijote de la Mancha">
+  <div class="producto-descripcion">
+    <span>Miguel de Cervantes</span>
+    <h5>Don Quijote de la Mancha</h5>
+    <h4>$4300</h4>
+  </div>
+  <a href="libros/don-quijote.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+<div class="producto">
+  <img src="img/harry-potter.jpg" alt="Harry Potter y la piedra filosofal">
+  <div class="producto-descripcion">
+    <span>J.K. Rowling</span>
+    <h5>Harry Potter y la piedra filosofal</h5>
+    <h4>$4200</h4>
+  </div>
+  <a href="libros/harry-potter.html" class="carrito">
+    <i class="fas fa-shopping-cart"></i>
+  </a>
+</div>
+
+
+  <!-- Podés duplicar y reemplazar con más libros -->
+</div>
+
+
+      <h3 style="margin-top: 40px; text-align: center;">Listado de libros</h3>
+<table class="tabla-catalogo">
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Precio</th>
+      <th>Enlace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Martín Fierro</td>
+      <td>José Hernández</td>
+      <td>$2500</td>
+      <td><a href="libros/martin-fierro.html">Ver más</a></td>
+    </tr>
+    <tr>
+      <td>Sin querer queriendo</td>
+      <td>Roberto G. Bolaños</td>
+      <td>$3100</td>
+      <td><a href="libros/sin-querer-queriendo.html">Ver más</a></td>
+    </tr>
+    <!-- Podés seguir agregando libros acá -->
+  </tbody>
+</table>
+
+    </section>
+
+<section class="video">
+  <h2 style="text-align: center; margin-bottom: 20px;">Recomendado 📺</h2>
+  <div style="display: flex; justify-content: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YLYJ565u0wE?si=44sUVov0YVbqwplo" 
+      title="Video de ejemplo" frameborder="0" allowfullscreen></iframe>
+  </div>
+</section>
+
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>Email: cirocapriz@gmail.com</p>
+      <p>Tel: +54 11 51658312</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Librería</p>
+  </footer>
+</body>
+</html>

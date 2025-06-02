@@ -1,0 +1,622 @@
+/* Reset básico 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y fondo 
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+
+/* Navegación 
+header {
+  margin-bottom: 30px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0077cc;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  background-color: #8faabd;
+  padding: 10px 0;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0077cc;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: #005fa3;
+}
+/* Sección bienvenida 
+.bienvenida {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bienvenida h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Catálogo 
+
+.section-catalogo {
+  padding: 40px 5%;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.producto {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.producto-descripcion {
+  padding: 15px;
+  text-align: center;
+}
+
+.producto-descripcion span {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.producto-descripcion h5 {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+.producto-descripcion h4 {
+  color: #333;
+  font-weight: bold;
+}
+
+.carrito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.catalogo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.catalogo h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.libros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+.libro {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.libro:hover {
+  transform: scale(1.03);
+}
+
+.libro img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.libro h3 {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.libro p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.precio {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+.cartel {
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #0077cc;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0077cc, 0 0 20px #0077cc;
+  animation: brillo 2s infinite alternate;
+  margin-bottom: 10px;
+}
+
+.producto {
+  background-color: #1e1e1e;
+}
+
+.producto-descripcion h4 {
+  color: #fff;
+}
+
+
+
+.tabla-catalogo {
+  background-color: #1e1e1e;
+}
+
+.tabla-catalogo thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.tabla-catalogo tbody tr:hover {
+  background-color: #2a2a2a;
+}
+.tabla-catalogo td,
+.tabla-catalogo th {
+  color: #ddd;
+}
+
+/* Efecto de brillo suave 
+@keyframes brillo {
+  from {
+    box-shadow: 0 0 10px #0077cc, 0 0 20px #0077cc;
+  }
+  to {
+    box-shadow: 0 0 20px #3399ff, 0 0 30px #3399ff;
+  }
+}
+
+
+.tabla-catalogo {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.tabla-catalogo thead {
+  background-color: #0077cc;
+  color: #fff;
+}
+
+.tabla-catalogo th,
+.tabla-catalogo td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.tabla-catalogo tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.tabla-catalogo a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.tabla-catalogo a:hover {
+  text-decoration: underline;
+}
+
+
+.descargar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.descargar:hover {
+  background-color: #005fa3;
+}
+
+
+
+.detalle-libro {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.detalle-libro {
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+}
+
+.detalle-libro a.descargar {
+  background-color: #0077cc;
+  color: white;
+}
+
+.img-detalle {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.detalle-libro a.descargar:hover {
+  background-color: #005fa3;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.navbar li a:hover {
+  background-color: #005fa3;
+}
+
+
+/* Contacto 
+.contacto {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contacto h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 50px;
+}*/
+
+
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografía y fondo */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #f1f1f1;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header y navegación */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0077cc;
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #005fa3;
+}
+
+/* Sección bienvenida */
+.bienvenida {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.bienvenida h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Catálogo */
+.catalogo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.catalogo h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.8em;
+}
+
+.section-catalogo {
+  padding: 40px 5%;
+}
+
+.productos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.producto {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.producto:hover {
+  transform: scale(1.03);
+}
+
+.producto img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.producto-descripcion {
+  padding: 15px;
+  text-align: center;
+}
+
+.producto-descripcion span,
+.producto-descripcion h5 {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.producto-descripcion h4 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.carrito {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+/* Cartel destacado */
+.cartel {
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #0077cc;
+  padding: 15px 30px;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #0077cc, 0 0 20px #0077cc;
+  animation: brillo 2s infinite alternate;
+  margin-bottom: 10px;
+}
+
+@keyframes brillo {
+  from {
+    box-shadow: 0 0 10px #0077cc, 0 0 20px #0077cc;
+  }
+  to {
+    box-shadow: 0 0 20px #3399ff, 0 0 30px #3399ff;
+  }
+}
+
+/* Tabla de catálogo */
+.tabla-catalogo {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-size: 0.95em;
+  background-color: #1e1e1e;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.tabla-catalogo thead {
+  background-color: #333;
+  color: #fff;
+}
+
+.tabla-catalogo th,
+.tabla-catalogo td {
+  padding: 12px 15px;
+  border: 1px solid #444;
+  text-align: left;
+  color: #ddd;
+}
+
+.tabla-catalogo tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+.tabla-catalogo a {
+  color: #66b3ff;
+  text-decoration: none;
+}
+
+.tabla-catalogo a:hover {
+  text-decoration: underline;
+}
+
+/* Botón descargar */
+.descargar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.descargar:hover {
+  background-color: #005fa3;
+}
+
+/* Detalle del libro */
+.detalle-libro {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #f1f1f1;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.img-detalle {
+  max-width: 300px;
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+
+.detalle-libro a.descargar:hover {
+  background-color: #005fa3;
+}
+
+/* Contacto */
+.contacto {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.contacto h2 {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 50px;
+}
