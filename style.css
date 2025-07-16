@@ -747,3 +747,46 @@ form#form-contacto button:hover {
     padding: 12px 16px;
   }
 }
+
+
+/* estilos generales */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color:#0044cc;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo-container img {
+  height: 50px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* para pantallas chicas */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
