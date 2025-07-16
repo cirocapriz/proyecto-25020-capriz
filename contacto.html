@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contacto</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
 </head>
 <body>
-
   <header class="header">
-    <div class="logo-container">
-      <img src="img/logo1.png" class="logo" alt="Logo">
-    </div>
-    <ul class="navbar">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="catalogo.html">Catálogo</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="carrito.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></li>
-    </ul>
-  </header>
+  <div class="logo-container">
+    <img src="img/logo1.png" class="logo" alt="Logo">
+  </div>
+  <ul class="navbar">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="catalogo.html">Catálogo</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+    <li>
+      <a href="carrito.html">
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+        <span id="contador-carrito" style="
+          background:red;
+          color:white;
+          border-radius:50%;
+          padding:2px 6px;
+          font-size:0.8rem;
+          position:relative;
+          top:-10px;
+          left:-5px;">0</span>
+      </a>
+    </li>
+  </ul>
+</header>
 
   <main class="contacto">
-    <h2>Contacto</h2>
-    <p>¿Querés consultarnos algo? Escribinos mediante el formulario:</p>
+  <h1>Contacto</h1>
+  <p>Si tenés dudas, sugerencias o querés contactarnos, completá el formulario:</p>
 
-    <form class="form-contacto" action="hhttps://formspree.io/f/xldneeak" method="POST">
-  <input type="text" name="nombre" placeholder="Tu nombre" required>
-  <input type="email" name="email" placeholder="Tu email" required>
-  <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
-  <button type="submit">Enviar</button>
-</form>
+  <form id="form-contacto">
+    <div>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required>
+    </div>
+    <div>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="descargar">Enviar</button>
+  </form>
 
-  </main>
+  <div id="resultado" style="margin-top:20px; color:green; font-weight:bold;"></div>
+</main>
 
-  <footer>
-    <p>&copy; 2025 Librería</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 Librería</p>
+</footer>
 
+<script src="script/carrito.js"></script>
+<script src="script/contacto.js"></script>
 </body>
 </html>
