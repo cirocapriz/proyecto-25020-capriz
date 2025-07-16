@@ -790,3 +790,25 @@ form#form-contacto button:hover {
   }
 }
 
+/* Ocultar el menú y mostrar hamburguesa en pantallas chicas */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .navbar.active {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+  }
+}
