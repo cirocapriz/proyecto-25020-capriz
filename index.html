@@ -43,31 +43,31 @@
   </section>
 
   <section id="catalogo" class="catalogo">
-    <h1>"La única cosa que tiene que saber, es la dirección de la biblioteca." Albert E.</h1>
     
+    <p id="frase-lectura" style="font-style: italic;"></p>
     
     <div class="productos-container">
 
-  <div class="producto" onclick="location.href='libros/martin-fierro.html'">
-    <img src="img/martin-fierro.jpg" alt="Martín Fierro">
+      <div class="producto" onclick="location.href='libros/harry-potter.html'">
+    <img src="img/harry-potter.jpg" alt="Harry Potter y la piedra filosofal">
     <div class="producto-descripcion">
-      <span>José Hernández</span>
-      <h5>Martín Fierro</h5>
-      <h4>$2500</h4>
+      <span>J.K. Rowling</span>
+      <h5>Harry Potter y la piedra filosofal</h5>
+      <h4>$4200</h4>
     </div>
-    <button class="agregar-carrito" data-producto="Martín Fierro" onclick="event.stopPropagation()">
+    <button class="agregar-carrito" data-producto="Harry Potter y la piedra filosofal" onclick="event.stopPropagation()">
       <i class="fas fa-shopping-cart"></i>
     </button>
   </div>
 
-  <div class="producto" onclick="location.href='libros/sin-querer-queriendo.html'">
-    <img src="img/sin-querer-queriendo.jpg" alt="Sin querer queriendo">
+  <div class="producto" onclick="location.href='libros/el-principito.html'">
+    <img src="img/el-principito.jpg" alt="El Principito">
     <div class="producto-descripcion">
-      <span>Roberto G. Bolaños</span>
-      <h5>Sin querer queriendo</h5>
-      <h4>$3100</h4>
+      <span>Antoine de Saint-Exupéry</span>
+      <h5>El Principito</h5>
+      <h4>$2200</h4>
     </div>
-    <button class="agregar-carrito" data-producto="Sin querer queriendo" onclick="event.stopPropagation()">
+    <button class="agregar-carrito" data-producto="El Principito" onclick="event.stopPropagation()">
       <i class="fas fa-shopping-cart"></i>
     </button>
   </div>
@@ -84,6 +84,20 @@
     </button>
   </div>
 
+  <div class="producto" onclick="location.href='libros/martin-fierro.html'">
+    <img src="img/martin-fierro.jpg" alt="Martín Fierro">
+    <div class="producto-descripcion">
+      <span>José Hernández</span>
+      <h5>Martín Fierro</h5>
+      <h4>$2500</h4>
+    </div>
+    <button class="agregar-carrito" data-producto="Martín Fierro" onclick="event.stopPropagation()">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+
+  
+
   <div class="producto" onclick="location.href='libros/1984.html'">
     <img src="img/1984.jpg" alt="1984">
     <div class="producto-descripcion">
@@ -96,17 +110,33 @@
     </button>
   </div>
 
-  <div class="producto" onclick="location.href='libros/el-principito.html'">
-    <img src="img/el-principito.jpg" alt="El Principito">
+   <div class="producto" onclick="location.href='libros/crimen-y-castigo.html'">
+    <img src="img/crimen-y-castigo.jpg" alt="Crimen y castigo">
     <div class="producto-descripcion">
-      <span>Antoine de Saint-Exupéry</span>
-      <h5>El Principito</h5>
-      <h4>$2200</h4>
+      <span>Fiódor Dostoievski</span>
+      <h5>Crimen y castigo</h5>
+      <h4>$6100</h4>
     </div>
-    <button class="agregar-carrito" data-producto="El Principito" onclick="event.stopPropagation()">
+    <button class="agregar-carrito" data-producto="Crimen y castigo" onclick="event.stopPropagation()">
       <i class="fas fa-shopping-cart"></i>
     </button>
   </div>
+
+  <div class="producto" onclick="location.href='libros/sin-querer-queriendo.html'">
+    <img src="img/sin-querer-queriendo.jpg" alt="Sin querer queriendo">
+    <div class="producto-descripcion">
+      <span>Roberto G. Bolaños</span>
+      <h5>Sin querer queriendo</h5>
+      <h4>$3100</h4>
+    </div>
+    <button class="agregar-carrito" data-producto="Sin querer queriendo" onclick="event.stopPropagation()">
+      <i class="fas fa-shopping-cart"></i>
+    </button>
+  </div>
+
+  
+
+  
 
   <div class="producto" onclick="location.href='libros/la-sombra-del-viento.html'">
     <img src="img/la-sombra-del-viento.jpg" alt="La Sombra del Viento">
@@ -132,17 +162,19 @@
     </button>
   </div>
 
-  <div class="producto" onclick="location.href='libros/harry-potter.html'">
-    <img src="img/harry-potter.jpg" alt="Harry Potter y la piedra filosofal">
+  <div class="producto" onclick="location.href='libros/la-chica-del-tren.html'">
+    <img src="img/la-chica-del-tren.jpg" alt="La chica del tren">
     <div class="producto-descripcion">
-      <span>J.K. Rowling</span>
-      <h5>Harry Potter y la piedra filosofal</h5>
-      <h4>$4200</h4>
+      <span>Paula Hawkins</span>
+      <h5>La chica del tren</h5>
+      <h4>$5100</h4>
     </div>
-    <button class="agregar-carrito" data-producto="Harry Potter y la piedra filosofal" onclick="event.stopPropagation()">
+    <button class="agregar-carrito" data-producto="La chica del tren" onclick="event.stopPropagation()">
       <i class="fas fa-shopping-cart"></i>
     </button>
   </div>
+
+  
 
 </div>
 
@@ -265,6 +297,30 @@
 
 <script src="script/carrito.js"></script>
 <script src="script/menu.js"></script>
+<script>
+const frases = [
+  "El que lee mucho y anda mucho, ve mucho y sabe mucho. — Cervantes",
+  "Una casa sin libros es como un cuerpo sin alma. — Cicerón",
+  "No hay dos personas que lean el mismo libro. — Edmund Wilson",
+  "Leer es soñar con los ojos abiertos.",
+  "Las bibliotecas son los tesoros del espíritu humano.",
+  "Los libros son espejos: solo se ve en ellos lo que uno ya lleva dentro. — Carlos Ruiz Zafón",
+  "Una biblioteca no es un lujo, sino una de las necesidades de la vida. — Henry Ward Beecher"
+];
+
+const fraseEl = document.getElementById("frase-lectura");
+
+function mostrarFraseAleatoria() {
+  const fraseElegida = frases[Math.floor(Math.random() * frases.length)];
+  fraseEl.textContent = fraseElegida;
+}
+
+// mostrar una al cargar
+mostrarFraseAleatoria();
+
+// cambiar cada x segundos (5000 ms)
+setInterval(mostrarFraseAleatoria, 10000);
+</script>
 
 
 </body>

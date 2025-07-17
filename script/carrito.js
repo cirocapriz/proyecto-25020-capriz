@@ -153,6 +153,8 @@ document.addEventListener('DOMContentLoaded', () => {
     'La Sombra del Viento': { precio: 3600, img: 'img/la-sombra-del-viento.jpg' },
     'Don Quijote de la Mancha': { precio: 4300, img: 'img/don-quijote.jpg' },
     'Harry Potter y la piedra filosofal': { precio: 4200, img: 'img/harry-potter.jpg' },
+    'La chica del tren': { precio: 4200, img: 'img/la-chica-del-tren.jpg' },
+    'Crimen y castigo': { precio: 7200, img: 'img/crimen-y-castigo.jpg' },
   };
 
   actualizarContador();
