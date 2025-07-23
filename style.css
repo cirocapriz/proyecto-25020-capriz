@@ -797,7 +797,7 @@ form#form-contacto button:hover {
   cursor: pointer;
   color: white;
 }
-
+/*
 @media (max-width: 600px) {
   .navbar {
     display: none;
@@ -808,6 +808,29 @@ form#form-contacto button:hover {
   .navbar.active {
     display: flex;
   }
+  .hamburger {
+    display: block;
+  }
+}
+*/
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
   .hamburger {
     display: block;
   }
